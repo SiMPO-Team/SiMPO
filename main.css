@@ -31,6 +31,7 @@ body
     font-size: 3em;
     float: left;
     margin-top: 12px;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -39,14 +40,13 @@ body
     align-items: center;
     font-weight: 800;
     float: left;
-    margin-top: 27px;
+    margin-top: 34px;
     font-size: 26px;
 }
 
 .buttons ul > li
 {
     list-style: none;
-    padding: 0px 15px 15px 0px;
     float: left;
 }
 
@@ -56,15 +56,14 @@ body
     padding: 10px;
     color: #fff;
     border-radius: 20px;
-    float: left;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: auto;
 }
 
 .buttons ul > li a:hover 
 {
     background: #fff;
     color: #3b0561;
+    padding: 10px;
 }
 
 .login
