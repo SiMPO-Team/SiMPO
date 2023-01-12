@@ -1,35 +1,83 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body
 {
-    min-height: 100vh;
-    background: linear-gradient(#6600CC, #6699FF);
+    background-image: url(img/body_background2.jpg);
+    background-size: cover;
 }
 
-header
+#banner
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    border-radius: 40px;
+    display: block;
 }
 
-header .logo
-{
-    color: #fff;
-    font-weight: 700;
+.logo a
+{   
+    background: #fff;
+    color: #3b0561;
+    text-transform: uppercase;
     text-decoration: none;
+    padding: 6px 65px 10px 60px;
+    border-radius: 40px;
+    font-weight: 800;
     font-size: 3em;
-    letter-spacing: 2px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.buttons ul
+{
+    align-items: center;
+    font-weight: 800;
+    float: left;
+    margin-top: 27px;
+    font-size: 26px;
+}
+
+.buttons ul > li
+{
+    list-style: none;
+    padding: 0px 15px 15px 0px;
+    float: left;
+}
+
+.buttons ul > li a
+{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    float: left;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.buttons ul > li a:hover 
+{
+    background: #fff;
+    color: #3b0561;
+}
+
+.login
+{
+    background: #fff;
+    color: #3b0561;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px 10px 20px;
+    border-radius: 40px;
+    font-weight: 800;
+    font-size: 26px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
 }
