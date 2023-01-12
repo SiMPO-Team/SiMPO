@@ -15,24 +15,25 @@ body
     display: inline-block;
     text-align: center;
     margin: 10px;
-    border-radius: 40px;
+    //border-radius: 40px;
     display: block;
+    border: 2px dashed red;
 }
 
 .logo a
 {   
     background: #fff;
     color: #3b0561;
-    text-transform: uppercase;
     text-decoration: none;
-    padding: 6px 65px 10px 60px;
-    border-radius: 40px;
+    padding: 10px 100px 0px 0px;
+    //border-radius: 40px;
     font-weight: 800;
     font-size: 3em;
     float: left;
-    margin-top: 12px;
+    margin-top: 6px;
     margin-left: 10px;
-    margin-right: 10px;
+    max-width: 100px;
+    border: 2px dashed red; 
 }
 
 .buttons ul
@@ -42,12 +43,14 @@ body
     float: left;
     margin-top: 34px;
     font-size: 26px;
+    border: 2px dashed red;
 }
 
 .buttons ul > li
 {
     list-style: none;
     float: left;
+    border: 2px dashed blue;
 }
 
 .buttons ul > li a
@@ -57,6 +60,7 @@ body
     color: #fff;
     border-radius: 20px;
     margin: auto;
+    border: 2px dashed yellow;
 }
 
 .buttons ul > li a:hover 
@@ -64,6 +68,7 @@ body
     background: #fff;
     color: #3b0561;
     padding: 10px;
+    border: 2px dashed red;
 }
 
 .login
@@ -79,4 +84,5 @@ body
     float: right;
     margin-top: 12px;
     margin-right: 10px;
+    border: 2px dashed red;
 }
