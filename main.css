@@ -10,59 +10,77 @@
 body
 {
     min-height: 100vh;
-    background: linear-gradient(#6600CC, #6699FF);
+    background: linear-gradient(#3b0561, #2d539e);
 }
 
-header
+/* The top part of the page: logo, home, contact etc. */
+#topnav
 {
-    position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    position: absolute;
     width: 100%;
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
+    word-spacing: 2px;
     align-items: center;
+    font-size: 24px;
 }
 
-header .logo
+.logo
 {
-    color: #fff;
-    font-weight: 700;
+    color: #3b0561;
+    background-color: #fff;
+    padding: 5px 220px 0px 220px;
+    border-radius: 40px;
+    font-weight: 900;
+    text-align: center;
     text-decoration: none;
     font-size: 3em;
-    letter-spacing: 2px;
+    letter-spacing: 15px;
+    margin-left: 5px;
 }
 
-header ul
+ul
 {
-    display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 800;
 }
 
-header ul li
+ul > li
 {
+    display: inline-flex;
     list-style: none;
-    margin-left: 20px;
+    padding: 0px 15px 15px 0px;
 }
 
-header ul li a
+ul > li a
 {
     text-decoration: none;
-    padding: 6px 15px;
+    padding: 10px;
     color: #fff;
     border-radius: 20px;
 }
 
-header ul li a:hover
+ul > li a:hover
 {
     background: #fff;
-    color: #7700CC;
+    color: #3b0561;
 }
 
-header ul li a.active
+ul > li a.login:last-child
 {
+    margin-left: 46px;
     background: #fff;
-    color: #7700CC;
+    color: #3b0561;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 40px 10px 36px;
+    border-radius: 20px;
+    font-weight: 900;
+    margin-top: 0px;
 }

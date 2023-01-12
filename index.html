@@ -15,18 +15,50 @@
 	<!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+
+	<script>
+		jQuery(function($)
+		{
+			// Scroll reset
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#'), 500); });
+			
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	</script>
+	
 	
 </head>
 
 <body>
 	<header>
-		<a href="#" class="logo">SiMPO</a>
-		<ul>
-			<li><a href="#" class="active">Strona Główna</a></li>
-			<li><a href="#">Mapa</a></li>
-			<li><a href="#">Gracze</a></li>
-			<li><a href="#">Kontakt</a></li>
-		</ul>
+		<nav id="topnav">
+			<a href="#" class="logo">SiMPO</a>
+			<ul>
+				<li><a href="#">Strona Główna</a></li>
+				<li><a href="#">Mapa</a></li>
+				<li><a href="#">Gracze</a></li>
+				<li><a href="#">Kontakt</a></li>
+				<li><a href="#" class="login">Zaloguj się</a></li>
+			</ul>
+		</nav>
 	</header>
+	<section>
+		<a href="#" class="main"></a>
+	</section>
 </body>
 </html>
