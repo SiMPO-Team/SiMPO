@@ -12,127 +12,130 @@ body
     background-attachment: fixed;
 }
 
-#banner 
+#topnav
 {
-    border: 1px dashed red;
-
-    display: block;
-    
-    margin: 0px;  
+    display: inline-block;
 }
 
-#banner .logo
-{   
-    border: 1px dashed red; 
+.logo
+{
+    background-color: #fff;
+    color: #1a0629;
 
-    background: #fff;
-    color: #3b0561;
-
-    font-weight: 800;
-    font-size: 3em;
-
-    text-decoration: none;
-    text-align: center;
-    
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 11px;
-    margin-right: 10px;
-
-    border-radius: 40px;
-    
     float: left;
-    
+
+    max-height: 80px;
+    min-height: 80px;
+
     max-width: 300px;
     min-width: 300px;
-    max-height: 90px;
-    min-height: 90px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    border-radius: 40px;
+
+    font-size: 3em;
+    font-weight: 900;
+
+    letter-spacing: 5px;
+    text-align: center;
+    text-decoration: none;
+
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
-#banner .buttons ul
+.menu
 {
-    border: 1px dashed red;
+    display: inline-block;
+    float: left;
 
-    font-weight: 800;
+    max-height: 80px;
+    min-height: 80px;
+
+    max-width: 1170px;
+    min-width: 1170px;
+}
+
+.menu ul > li 
+{
+    background-color: #fff;
+    color: #1a0629;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 10px;
+    
+    max-height: 70px;
+    min-height: 70px;
+    
+    border-radius: 40px;
+
+    position: relative;
+    display: flex;
+}
+
+.menu ul > li a
+{
+    margin-inline: 50px;
+    
+    text-decoration: none;
+
     font-size: 26px;
 
-    align-items: center;
-    
-    float: left;
+    position: absolute;
 
-    margin-top: 34px;
-}
+    top: 50%;
+    transform: translate(0, -50%)
+}    
 
-#banner .buttons ul > li
+.login a
 {
-    border: 1px dashed blue;
+    background-color: #fff;
+    color: #1a0629;
 
-    display: block;
-    list-style: none;
-    float: left;
+    float: right;
 
-    left: 50%;
+    max-height: 80px;
+    min-height: 80px;
 
-    padding: 0px 50px 0px 0px;
+    max-width: 350px;
+    min-width: 350px;
 
+    margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+
+    border-radius: 40px;
+
+    font-size: 3em;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+    text-align: center;
+    text-decoration: none;
+
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
-#banner .buttons ul > li:first-child
+footer
 {
-    margin-left: 0px;
-}
-
-#banner .buttons ul > li:last-child
-{
-    margin-right: 0px;
-    
-}
-
-#banner .buttons ul > li a
-{
-    border: 1px dashed yellow;
-
+    background-color: #1a0629;
     color: #fff;
 
-    text-decoration: none;
+    position: absolute;
+    bottom: 0;
 
-    border-radius: 20px;
-}
+    width: 100%;
 
-#banner .buttons ul > li a:hover 
-{
-    border: 1px dashed red;
+    max-height: 50px;
+    min-height: 50px;
 
-    background: #fff;
-    color: #3b0561;
-}
-
-#banner .login
-{
-    border: 1px dashed red;
-
-    background: #fff;
-    color: #3b0561;
-
-    font-weight: 800;
-    font-size: 26px;
-
-    text-transform: uppercase;
-    text-decoration: none;
     text-align: center;
- 
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 11px;
-    margin-left: 10px; 
-
-    border-radius: 40px;
     
-    float: right;
-    
-    max-width: 300px;
-    min-width: 300px;
-    max-height: 90px;
-    min-height: 90px;
+    padding-top: 25px;
 }
