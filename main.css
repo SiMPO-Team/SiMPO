@@ -1,85 +1,83 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body
 {
-    min-height: 100vh;
-    background: linear-gradient(#3b0561, #2d539e);
+    background-image: url(img/body_background2.jpg);
+    background-size: cover;
 }
 
-/* The top part of the page: logo, home, contact etc. */
-#topnav
+#banner
 {
-    top: 0;
-    left: 0;
-    display: flex;
-    position: absolute;
-    width: 100%;
-    padding: 30px 100px;
-    justify-content: space-between;
-    word-spacing: 2px;
-    align-items: center;
-    font-size: 24px;
-}
-
-.logo
-{
-    color: #3b0561;
-    background-color: #fff;
-    padding: 5px 220px 0px 220px;
-    border-radius: 40px;
-    font-weight: 900;
+    display: inline-block;
     text-align: center;
-    text-decoration: none;
-    font-size: 3em;
-    letter-spacing: 15px;
-    margin-left: 5px;
+    margin: 10px;
+    border-radius: 40px;
+    display: block;
 }
 
-ul
+.logo a
+{   
+    background: #fff;
+    color: #3b0561;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 65px 10px 60px;
+    border-radius: 40px;
+    font-weight: 800;
+    font-size: 3em;
+    float: left;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.buttons ul
 {
-    justify-content: center;
     align-items: center;
     font-weight: 800;
+    float: left;
+    margin-top: 27px;
+    font-size: 26px;
 }
 
-ul > li
+.buttons ul > li
 {
-    display: inline-flex;
     list-style: none;
     padding: 0px 15px 15px 0px;
+    float: left;
 }
 
-ul > li a
+.buttons ul > li a
 {
     text-decoration: none;
     padding: 10px;
     color: #fff;
     border-radius: 20px;
+    float: left;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
-ul > li a:hover
+.buttons ul > li a:hover 
 {
     background: #fff;
     color: #3b0561;
 }
 
-ul > li a.login:last-child
+.login
 {
     background: #fff;
     color: #3b0561;
     text-transform: uppercase;
-    list-style: none;
     text-decoration: none;
-    padding: 10px 40px 10px 36px;
-    border-radius: 20px;
-    font-weight: 900;
-    margin-top: 0px;
-    margin-left: 46px;
+    padding: 5px 15px 10px 20px;
+    border-radius: 40px;
+    font-weight: 800;
+    font-size: 26px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
 }
