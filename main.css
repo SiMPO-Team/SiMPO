@@ -8,81 +8,131 @@ body
 {
     background-image: url(img/body_background2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-#banner
+#banner 
 {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    //border-radius: 40px;
+    border: 1px dashed red;
+
     display: block;
-    border: 2px dashed red;
+    
+    margin: 0px;  
 }
 
-.logo a
+#banner .logo
 {   
+    border: 1px dashed red; 
+
     background: #fff;
     color: #3b0561;
-    text-decoration: none;
-    padding: 10px 100px 0px 0px;
-    //border-radius: 40px;
+
     font-weight: 800;
     font-size: 3em;
+
+    text-decoration: none;
+    text-align: center;
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 11px;
+    margin-right: 10px;
+
+    border-radius: 40px;
+    
     float: left;
-    margin-top: 6px;
-    margin-left: 10px;
-    max-width: 100px;
-    border: 2px dashed red; 
+    
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 90px;
+    min-height: 90px;
 }
 
-.buttons ul
+#banner .buttons ul
 {
-    align-items: center;
+    border: 1px dashed red;
+
     font-weight: 800;
-    float: left;
-    margin-top: 34px;
     font-size: 26px;
-    border: 2px dashed red;
+
+    align-items: center;
+    
+    float: left;
+
+    margin-top: 34px;
 }
 
-.buttons ul > li
+#banner .buttons ul > li
 {
+    border: 1px dashed blue;
+
+    display: block;
     list-style: none;
     float: left;
-    border: 2px dashed blue;
+
+    left: 50%;
+
+    padding: 0px 50px 0px 0px;
+
+    margin-right: 10px;
 }
 
-.buttons ul > li a
+#banner .buttons ul > li:first-child
 {
-    text-decoration: none;
-    padding: 10px;
+    margin-left: 0px;
+}
+
+#banner .buttons ul > li:last-child
+{
+    margin-right: 0px;
+    
+}
+
+#banner .buttons ul > li a
+{
+    border: 1px dashed yellow;
+
     color: #fff;
-    border-radius: 20px;
-    margin: auto;
-    border: 2px dashed yellow;
-}
 
-.buttons ul > li a:hover 
-{
-    background: #fff;
-    color: #3b0561;
-    padding: 10px;
-    border: 2px dashed red;
-}
-
-.login
-{
-    background: #fff;
-    color: #3b0561;
-    text-transform: uppercase;
     text-decoration: none;
-    padding: 5px 15px 10px 20px;
-    border-radius: 40px;
+
+    border-radius: 20px;
+}
+
+#banner .buttons ul > li a:hover 
+{
+    border: 1px dashed red;
+
+    background: #fff;
+    color: #3b0561;
+}
+
+#banner .login
+{
+    border: 1px dashed red;
+
+    background: #fff;
+    color: #3b0561;
+
     font-weight: 800;
     font-size: 26px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+ 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 11px;
+    margin-left: 10px; 
+
+    border-radius: 40px;
+    
     float: right;
-    margin-top: 12px;
-    margin-right: 10px;
-    border: 2px dashed red;
+    
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 90px;
+    min-height: 90px;
 }
