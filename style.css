@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *
 {
     box-sizing: border-box;
@@ -8,9 +10,23 @@
 
 body
 {
-    font-family: sans-serif;
     height: 100vh;
     background-image: url(img/body_background2.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.soon .main
+{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
