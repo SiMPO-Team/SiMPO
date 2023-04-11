@@ -8,10 +8,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="login.css">
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
             crossorigin="anonymous">
+        </script>
+        <script src="popup.js"></script>
+        <script>
+            $(function() {
+                $(".button").on("click", function() {
+                    if ($(".popup").hasClass("active")) {
+                        $(".popup").removeClass("active");
+                    } else {
+                        $(".popup").addClass("active");
+                    }
+                });
+            });
         </script>
         <script>
             $(function() {
@@ -32,7 +45,7 @@
             <li class="item button2"><a class="nav" href="#">About</a></li>
             <li class="item button2"><a class="nav" href="#">Map</a></li>
             <li class="item button2"><a class="nav" href="#">Contact</a></li>
-            <li class="item button"><a class="nav" href="#">Login</a></li>
+            <li class="item button" id="show-login"><a class="nav" href="#">Log In</a></li>
             <li class="item button secondary"><a class="nav" href="#">Sign Up</a></li>
             <li class="toggle"><span class="bars"></span></li>
         </ul>
@@ -40,5 +53,28 @@
     <main>
         <div class="soon"><a class="main" href="">The server<br>will be<br>launched soon</a></div>
     </main>
+    <div class="popup">
+        <div class="close-button">&times;</div>
+        <div class="form"></div>
+            <h2>Log in</h2>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button>Sign in</button>
+            </div>
+            <div class="form-element">
+                <a class="popup" href="#">Forgot password?</a>
+            </div>
+    </div>
 </body>
 </html>

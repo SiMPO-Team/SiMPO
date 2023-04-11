@@ -16,7 +16,7 @@ body
     background-position: center;
 }
 
-.soon .main
+.soon a.main
 {
     color: white;
     font-family: 'Press Start 2P', cursive;
@@ -27,6 +27,6 @@ body
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 80vh;
+    height: 90vh;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
