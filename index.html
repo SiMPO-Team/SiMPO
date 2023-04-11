@@ -28,6 +28,17 @@
         </script>
         <script>
             $(function() {
+                $(".button").on("click", function() {
+                    if ($(".main").hasClass("deactive")) {
+                        $(".main").removeClass("deactive");
+                    } else {
+                        $(".main").addClass("deactive");
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(function() {
                 $(".toggle").on("click", function() {
                     if ($(".item").hasClass("active")) {
                         $(".item").removeClass("active");
@@ -66,8 +77,8 @@
                 <input type="password" id="password" placeholder="Enter password">
             </div>
             <div class="form-element">
-                <input type="checkbox" id="remember-me">
                 <label for="remember-me">Remember me</label>
+                <input type="checkbox" id="remember-me">    
             </div>
             <div class="form-element">
                 <button>Sign in</button>
