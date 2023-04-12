@@ -10,7 +10,7 @@
     background: #fff;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    transition: top 0ms ease-in-out 200ms,
+    transition: top 0ms ease-in-out 100ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms;
 }
@@ -21,8 +21,8 @@
     left: 50%;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.25);
-    transition: top 0ms ease-in-out 0ms,
-                opacity 200ms ease-in-out 0ms,
+    transition: top 0ms ease-in-out 20ms,
+                opacity 200ms ease-in-out 100ms,
                 transform 200ms ease-in-out 0ms;
     text-decoration: none;
 }
@@ -91,12 +91,12 @@
     cursor: pointer;
 }
 
-.popup .form .form-element a.popup
+.popup .form .form-element a
 {
     display: block;
+    position: relative;
     text-align: right;
     font-size: 15px;
     color: #1a79ca;
     text-decoration: none;
-    font-weight: 600;
 }

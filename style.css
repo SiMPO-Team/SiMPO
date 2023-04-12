@@ -14,6 +14,7 @@ body
     background-image: url(img/body_background2.jpg);
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(3px);
 }
 
 .soon a.main
@@ -31,14 +32,14 @@ body
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
     opacity: 1;
     transition: top 0ms ease-in-out 200ms,
-                opacity 200ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 100ms,
                 transform 200ms ease-in-out 200ms;
 }
 
 .soon a.main.deactive
 {
     opacity: 0;
-    transition: top 0ms ease-in-out 200ms,
+    transition: top 0ms ease-in-out 100ms,
                 opacity 200ms ease-in-out 0ms,
                 transform 200ms ease-in-out 0ms;
 }
