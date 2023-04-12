@@ -9,29 +9,36 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet" href="main.css">
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
             crossorigin="anonymous">
         </script>
-        <script src="popup.js"></script>
         <script>
             $(function() {
-                $(".button").on("click", function() {
-                    if ($(".popup").hasClass("active")) {
-                        $(".popup").removeClass("active");
+                $(".log-in, .close-button-log-in").on("click", function() {
+                    if ($(".popup-log-in").hasClass("active")) {
+                        $(".popup-log-in").removeClass("active");
+                        $(".main").removeClass("deactive");
                     } else {
-                        $(".popup").addClass("active");
+                        $(".popup-log-in").addClass("active");
+                        $(".popup-sign-up").removeClass("active");
+                        $(".main").addClass("deactive");
                     }
                 });
             });
         </script>
         <script>
             $(function() {
-                $(".button").on("click", function() {
-                    if ($(".main").hasClass("deactive")) {
+                $(".sign-up, .close-button-sign-up").on("click", function() {
+                    if ($(".popup-sign-up").hasClass("active")) {
+                        $(".popup-sign-up").removeClass("active");
                         $(".main").removeClass("deactive");
                     } else {
+                        $(".popup-sign-up").addClass("active");
+                        $(".popup-log-in").removeClass("active");
                         $(".main").addClass("deactive");
                     }
                 });
@@ -56,16 +63,17 @@
             <li class="item button2"><a class="nav" href="#">About</a></li>
             <li class="item button2"><a class="nav" href="#">Map</a></li>
             <li class="item button2"><a class="nav" href="#">Contact</a></li>
-            <li class="item button" id="show-login"><a class="nav" href="#">Log In</a></li>
-            <li class="item button secondary"><a class="nav" href="#">Sign Up</a></li>
+            <li class="item button log-in"><a class="nav" href="#">Log In</a></li>
+            <li class="item button secondary sign-up"><a class="nav" href="#">Sign Up</a></li>
             <li class="toggle"><span class="bars"></span></li>
         </ul>
     </nav>
     <main>
         <div class="soon"><a class="main" href="">The server<br>will be<br>launched soon</a></div>
     </main>
-    <div class="popup">
-        <div class="close-button">&times;</div>
+    <!-- Log in window -->
+    <div class="popup-log-in">
+        <div class="close-button-log-in">&times;</div>
         <div class="form">
             <h2>Log in</h2>
             <div class="form-element">
@@ -85,6 +93,32 @@
             </div>
             <div class="form-element">
                 <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+    <!-- Sign up window -->
+    <div class="popup-sign-up">
+        <div class="close-button-sign-up">&times;</div>
+        <div class="form">
+            <h2>Sign up</h2>
+            <div class="form-element">
+                <label for="nickname">Nickname</label>
+                <input type="text" id="nickname" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-element">
+                <label for="re-password">Repeat password</label>
+                <input type="password" id="re-password" placeholder="Repeat password">
+            </div>
+            <div class="form-element">
+                <button>Register</button>
             </div>
         </div>
     </div>
