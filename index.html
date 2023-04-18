@@ -32,6 +32,17 @@
         </script>
         <script>
             $(function() {
+                $(".toggle").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                    } else {
+                        $(".item").addClass("active");
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(function() {
                 $(".sign-up, .close-button-sign-up").on("click", function() {
                     if ($(".popup-sign-up").hasClass("active")) {
                         $(".popup-sign-up").removeClass("active");
@@ -44,25 +55,20 @@
                 });
             });
         </script>
-        <script>
-            $(function() {
-                $(".toggle").on("click", function() {
-                    if ($(".item").hasClass("active")) {
-                        $(".item").removeClass("active");
-                    } else {
-                        $(".item").addClass("active");
-                    }
-                });
-            });
-        </script>
     </head>
-<body>
+<body class="blur">
     <nav>
         <ul class="nav-menu">
             <li class="logo"><a class="nav" href="#">SiMPO</a></li>
-            <li class="item button2"><a class="nav" href="#">About</a></li>
-            <li class="item button2"><a class="nav" href="#">Server</a></li>
-            <li class="item button2"><a class="nav" href="#">Contact</a></li>
+            <li class="item button2 about"><a class="nav" href="#">About</a></li>
+            <li class="item button2 server"><a class="nav" href="#">Server</a>
+                <ul>
+                    <li><a href="forum.index">Forum</a></li>
+                    <li><a href="mods.index">Mods</a></li>
+                    <li><a href="players.index">Players</a></li>
+                </ul>
+            </li>
+            <li class="item button2 contact"><a class="nav" href="#">Contact</a></li>
             <li class="item button log-in"><a class="nav" href="#">Log In</a></li>
             <li class="item button secondary sign-up"><a class="nav" href="#">Sign Up</a></li>
             <li class="toggle"><span class="bars"></span></li>

@@ -14,5 +14,4 @@ body
     background-image: url(img/body_background2.jpg);
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(3px);
 }
