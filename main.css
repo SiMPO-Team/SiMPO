@@ -1,4 +1,4 @@
-.soon a.main
+.soon a.info-soon
 {
     color: white;
     font-family: 'Press Start 2P', cursive;
@@ -18,7 +18,7 @@
                 transform 200ms ease-in-out 200ms;
 }
 
-.soon a.main.deactive
+.soon a.info-soon.deactive
 {
     opacity: 0;
     transition: top 0ms ease-in-out 100ms,
